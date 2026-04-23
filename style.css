@@ -1,81 +1,111 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Pranav Rudraraju | Portfolio</title>
-  <link rel="stylesheet" href="style.css">
-</head>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
 
-<body>
+body {
+  background: #f5f5f5;
+  color: #333;
+}
 
-<!-- NAVBAR -->
-<nav class="navbar">
-  <div class="logo">Pranav Rudraraju</div>
-  <div class="nav-links">
-    <a href="#about">About</a>
-    <a href="#skills">Skills</a>
-    <a href="#projects">Projects</a>
-  </div>
-</nav>
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #7600bc;
+  color: white;
+  padding: 15px 40px;
+}
 
-<!-- ABOUT -->
-<section id="about" class="section">
-  <h1>Hello, I'm Pranav </h1>
-  <p>
-    Computer Science student skilled in full-stack development, machine learning, 
-    and deep learning. I build scalable web apps and AI-powered solutions.
-  </p>
+.nav-links a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: 500;
+}
 
-  <div class="contact">
-    <p>📧 pranavrudraraju6@gmail.com</p>
-    <p>📱 +91 9856114455</p>
-  </div>
-</section>
+.nav-links a:hover {
+  text-decoration: underline;
+}
 
-<!-- SKILLS -->
-<section id="skills" class="section">
-  <h2>Skills</h2>
+/* SECTIONS */
+.section {
+  padding: 60px 80px;
+}
 
-  <div class="skills-container">
-    <div class="skill">HTML</div>
-    <div class="skill">CSS</div>
-    <div class="skill">JavaScript</div>
-    <div class="skill">React</div>
-    <div class="skill">Node.js</div>
-    <div class="skill">MongoDB</div>
-    <div class="skill">Python</div>
-    <div class="skill">Machine Learning</div>
-    <div class="skill">Deep Learning</div>
-  </div>
-</section>
+h1 {
+  font-size: 40px;
+  margin-bottom: 15px;
+  color: #7600bc;
+}
 
-<!-- PROJECTS -->
-<section id="projects" class="section">
-  <h2>Projects</h2>
+h2 {
+  font-size: 30px;
+  margin-bottom: 30px;
+  color: #7600bc;
+}
 
-  <div class="projects-container">
+/* ABOUT */
+.contact {
+  margin-top: 20px;
+  font-size: 18px;
+}
 
-    <div class="project-card">
-      <h3>E-Commerce Website</h3>
-      <p>Full-stack shopping app using React, Node.js, MongoDB.</p>
-      <a href="https://github.com/Pranavvarma69/ecommerce-app" target="_blank">
-        View Project →
-      </a>
-    </div>
+/* SKILLS */
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
 
-    <div class="project-card">
-      <h3>X-Ray Analyzer (AI)</h3>
-      <p>AI-powered web app using TensorFlow for X-ray analysis.</p>
-      <a href="https://github.com/pranavrudraraju/xray-analyser" target="_blank">
-        View Project →
-      </a>
-    </div>
+.skill {
+  background: white;
+  padding: 12px 20px;
+  border-radius: 8px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
 
-  </div>
-</section>
+/* PROJECTS */
+.projects-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
 
-<!-- SCROLL BUTTON -->
-<a href="#" class="scroll-top">↑</a>
+.project-card {
+  background: white;
+  padding: 20px;
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
 
-</body>
-</html>
+.project-card h3 {
+  margin-bottom: 10px;
+}
+
+.project-card a {
+  text-decoration: none;
+  color: #7600bc;
+  font-weight: bold;
+}
+
+.project-card a:hover {
+  text-decoration: underline;
+}
+
+/* SCROLL BUTTON */
+.scroll-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #7600bc;
+  color: white;
+  padding: 12px 16px;
+  border-radius: 50%;
+  text-decoration: none;
+  font-size: 18px;
+}
